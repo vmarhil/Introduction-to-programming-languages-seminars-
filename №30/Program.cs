@@ -14,10 +14,7 @@ int Qb_a = Convert.ToInt32(Math.Pow(a, 3));
 int Qb_b = Convert.ToInt32(Math.Pow(b, 3));
 int Qb_c = Convert.ToInt32(Math.Pow(c, 3));
 int Qb_d = Convert.ToInt32(Math.Pow(d, 3));
-Console.WriteLine("Куб числа a = " + Qb_a);
-Console.WriteLine("Куб числа b = " + Qb_b);
-Console.WriteLine("Куб числа c = " + Qb_c);
-Console.WriteLine("Куб числа d = " + Qb_d);
+Console.WriteLine();
 while (a > 10 )
 {
     a = a % 10;  
