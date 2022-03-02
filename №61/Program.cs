@@ -58,10 +58,10 @@ int b10 = array[1,0];
 int b11 = array[1,1];
 
 int[,] array3 = new int[2, 2];
-array3[0,0] = (a00*b00) + (a01*b10);
-array3[0,1] = (a00*b01) + (a01*b11);
-array3[1,0] = (a10*b00) + (a11*b10);
-array3[1,1] = (a10*b01) + (a11*b11);
+array3[0,0] = ((a00*b00) + (a01*b10));
+array3[0,1] = ((a00*b01) + (a01*b11));
+array3[1,0] = ((a10*b00) + (a11*b10));
+array3[1,1] = ((a10*b01) + (a11*b11));
 
 for (int i = 0; i < array3.GetLength(0); i++)
 {
