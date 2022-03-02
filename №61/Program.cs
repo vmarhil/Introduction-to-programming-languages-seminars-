@@ -9,7 +9,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        array[i, j] = random.Next(-10, 10);
+        array[i, j] = random.Next(5);
     }
     Console.WriteLine();
 
@@ -30,7 +30,7 @@ for (int i = 0; i < array2.GetLength(0); i++)
 {
     for (int j = 0; j < array2.GetLength(1); j++)
     {
-        array2[i, j] = random.Next(-10, 10);
+        array2[i, j] = random.Next(5);
     }
     Console.WriteLine();
 
@@ -47,21 +47,21 @@ for (int i = 0; i < array2.GetLength(0); i++)
 }
 Console.WriteLine("========================================");
 Console.WriteLine("Произведение двух матриц: ");
-int a11 = array[0,0];
-int a12 = array[0,1];
-int a21 = array[1,0];
-int a22 = array[1,1];
+int a00 = array[0,0];
+int a01 = array[0,1];
+int a10 = array[1,0];
+int a11 = array[1,1];
 
-int b11 = array[0,0];
-int b12 = array[0,1];
-int b21 = array[1,0];
-int b22 = array[1,1];
+int b00 = array[0,0];
+int b01 = array[0,1];
+int b10 = array[1,0];
+int b11 = array[1,1];
 
 int[,] array3 = new int[2, 2];
-array3[0,0] = a11*b11+a12*b21;
-array3[0,1] = a11*b12+a12*b22;
-array3[1,0] = a21*b11+a21*b21;
-array3[1,1] = a21*b12+a22*b22;
+array3[0,0] = (a00*b00) + (a01*b10);
+array3[0,1] = (a00*b01) + (a01*b11);
+array3[1,0] = (a10*b00) + (a11*b10);
+array3[1,1] = (a10*b01) + (a11*b11);
 
 for (int i = 0; i < array3.GetLength(0); i++)
 {
